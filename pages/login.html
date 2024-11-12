@@ -6,20 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healthcare App - Login</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/scripts.js"></script>
 </head>
 
 <body>
+    
     <header>
         <h1>Login</h1>
-        <p>Click the button below to go to your profile.</p>
+        <p>Please enter your Username and Password to log in.</p>
     </header>
 
-    <nav>
-        <a href="/pages/profile.html">
-            <button>Login</button>
-        </a>
-    </nav>
+    <section>
+        <form id="loginForm" onsubmit="validateLogin(event)">
+            <label for="email">Username:</label>
+            <input type="text" id="email" required>
 
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p id="loginMessage"></p> <!-- Message area for login success or failure -->
+    </section>
+
+  
+    <script src="/js/scripts.js"></script>
+</body>
+
+</html>
 </body>
 
 </html>
