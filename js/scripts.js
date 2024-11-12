@@ -1,11 +1,11 @@
 //Login
 function validateLogin(event) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault(); 
     console.log("Login function triggered"); 
 
     // Mock credentials
-    const validEmail = "user"; // Mock username 
-    const validPassword = "password"; // Mock password 
+    const validEmail = "user"; 
+    const validPassword = "password"; 
 
     // Get values from form fields
     const email = document.getElementById("email").value;

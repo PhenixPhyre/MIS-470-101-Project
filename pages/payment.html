@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare App - Payment</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Payment Options</h1>
+        <p>Upgrade to an ad-free experience by choosing one of the payment options below.</p>
+    </header>
+
+    <section>
+        <h2>Select a Payment Option</h2>
+        <p>Choose one of the plans below to remove ads from the app and enjoy an uninterrupted experience.</p>
+
+        <form id="paymentForm" action="/submit-payment" method="POST">
+            <!-- Option 1: Monthly Subscription -->
+            <div class="payment-option">
+                <h3>Monthly Plan - $5.99</h3>
+                <p>Pay monthly to remove ads and get premium features.</p>
+                <input type="radio" id="monthly" name="payment_plan" value="monthly" required>
+                <label for="monthly">Choose Monthly Plan</label>
+            </div>
+
+            <!-- Option 2: Yearly Subscription -->
+            <div class="payment-option">
+                <h3>Yearly Plan - $59.99</h3>
+                <p>Save 15% by choosing the yearly plan.</p>
+                <input type="radio" id="yearly" name="payment_plan" value="yearly">
+                <label for="yearly">Choose Yearly Plan</label>
+            </div>
+
+            <div class="payment-details">
+                <h3>Enter Payment Information</h3>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+                <label for="cardNumber">Credit Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+
+                <label for="expirationDate">Expiration Date:</label>
+                <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YY" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+
+                <button type="submit">Complete Payment</button>
+            </div>
+        </form>
+    </section>
+
+    <nav>
+        <a href="/pages/profile.html">
+            <button>Back</button>
+        </a>
+    </nav>
+
+</body>
+
+</html>

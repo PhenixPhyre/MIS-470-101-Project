@@ -14,11 +14,54 @@
         <p>Access telehealth services and consult with a healthcare provider online.</p>
     </header>
 
+    <section>
+        <form id="telehealthForm">
+            <!-- Patient Information -->
+            <h2>Patient Information</h2>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <!-- Symptoms and Medical History -->
+            <h2>Symptoms</h2>
+            <label for="symptoms">Describe your symptoms:</label>
+            <textarea id="symptoms" name="symptoms" rows="4" required></textarea>
+
+            <label for="medicalHistory">Relevant Medical History:</label>
+            <textarea id="medicalHistory" name="medicalHistory" rows="3"></textarea>
+
+            <!-- Appointment Preferences -->
+            <h2>Appointment Preferences</h2>
+            <label for="preferredDate">Preferred Date:</label>
+            <input type="date" id="preferredDate" name="preferredDate" required>
+
+            <label for="preferredTime">Preferred Time:</label>
+            <input type="time" id="preferredTime" name="preferredTime" required>
+
+            <label for="communicationMethod">Preferred Communication Method:</label>
+            <select id="communicationMethod" name="communicationMethod" required>
+                <option value="video">Video Call</option>
+                <option value="phone">Phone Call</option>
+                <option value="chat">Text Chat</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
     <nav>
         <a href="/pages/profile.html">
             <button>Back</button>
         </a>
     </nav>
+
 </body>
 
 </html>
