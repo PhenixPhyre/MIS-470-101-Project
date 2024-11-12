@@ -107,7 +107,29 @@ form input[type="password"] {
     font-size: 16px;
 }
 
-/* center widget */
-.symptom-lookup-widget>div {
-    margin: 0 auto !important;
+#widget-container {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#widget-header {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#widget-content {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.loading {
+    color: #888;
 }

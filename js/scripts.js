@@ -1,3 +1,4 @@
+//Login
 function validateLogin(event) {
     event.preventDefault(); // Prevent form submission
     console.log("Login function triggered"); 
@@ -29,3 +30,4 @@ function validateLogin(event) {
         document.getElementById("loginMessage").style.color = "red";
     }
 }
+
