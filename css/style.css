@@ -225,3 +225,16 @@ form input[type="password"] {
 .content {
     width: 100%;
 }
+#chat-widget-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#chat-widget iframe {
+    width: 90%; /* Increased width for better readability */
+    max-width: 1200px; /* Limits how wide it can get */
+    height: 700px; /* Increased height to show more content */
+    border: none;
+}
