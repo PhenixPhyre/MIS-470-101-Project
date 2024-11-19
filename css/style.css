@@ -210,3 +210,18 @@ form input[type="password"] {
 .loading {
     color: #888;
 }
+ /* Ad space */
+ .ad-space {
+    background-color: #5EB1BF;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px  #ccc;
+    font-size: 1rem;
+    font-style: bold;
+}
+
+.content {
+    width: 100%;
+}
